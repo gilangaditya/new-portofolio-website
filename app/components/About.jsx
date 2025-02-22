@@ -10,7 +10,6 @@ const About = ({isDarkMode})=> {
             <div className="flex w-full flex-col lg:flex-row items-center gap-20 my-20">
                 <div className="w-64 sm:w-80 rounded-3xl mx-w-one">
                     <Image src={assets.icon3} alt="user image" className="w-full rounded-3xl" />
-                    console.log(icon3);
                 </div>
                 <div className="flex-1">
                     <p className="mb-10 max-w-2xl font-Ovo">I am experience Software Engineer with over a decade of professional expertise in the field thoughtout my career, I have had teh privilege of collaboration with prestigius organization, contributing to their success and growth. </p>
