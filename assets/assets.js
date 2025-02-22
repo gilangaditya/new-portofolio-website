@@ -35,7 +35,25 @@ import right_arrow from './right-arrow.png';
 import send_icon from './send-icon.png';
 import right_arrow_bold from './right-arrow-bold.png';
 import right_arrow_bold_dark from './right-arrow-bold-dark.png';
-import icon3 from './icon3.PNG';
+import icon3 from './icon3.png';
+import docker from './docker.svg';
+import java from './java.svg';
+import python from './python.svg';
+import reactjs from './reactjs.svg';
+import tailwindcss from './tailwindcss.svg';
+import spring from './spring.svg';
+import wordpress from './wordpress.svg';
+import vuejs from './vuejs.svg';
+import github_dark from './github_dark.svg';
+import github from './github.svg';
+import postgresql from './postgresql.svg';
+import linux from './linux.svg';
+import php from './php.svg';
+import mysql from './mysql.svg';
+import nextjs2_dark from './nextjs2_dark.svg';
+import nextjs2 from './nextjs2.svg';
+import laravel from './laravel.svg'
+
 
 export const assets = {
     user_image,
@@ -75,7 +93,24 @@ export const assets = {
     send_icon,
     right_arrow_bold,
     right_arrow_bold_dark,
-    icon3
+    icon3,
+    docker,
+    github_dark,
+    github,
+    java,
+    linux,
+    mysql,
+    nextjs2,
+    nextjs2_dark,
+    php,
+    postgresql,
+    python,
+    spring,
+    tailwindcss,
+    vuejs,
+    wordpress,
+    reactjs,
+    laravel
 };
 
 export const workData = [
@@ -109,11 +144,15 @@ export const serviceData = [
 ]
 
 export const infoList = [
-    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'HTML, CSS, JavaScript React Js, Next Js' },
-    { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'B.Tech in Computer Science' },
+    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'HTML, CSS, JavaScript React Js, Next Js, Java, PHP, Python' },
+    { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'Bachelor Of Computer Secience' },
     { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Projects', description: 'Built more than 5 projects' }
 ];
 
 export const toolsData = [
-    assets.vscode, assets.firebase, assets.mongodb, assets.figma, assets.git
+    assets.vscode, assets.firebase, assets.figma, assets.git, assets.mongodb, assets.docker, assets.linux, assets.github,
+];
+
+export const techData = [
+    assets.nextjs2,  assets.reactjs, assets.tailwindcss, assets.laravel, assets.java, assets.spring ,assets.python, assets.mysql, assets.postgresql
 ];
