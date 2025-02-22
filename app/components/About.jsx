@@ -12,7 +12,7 @@ const About = ({isDarkMode})=> {
                     <Image src={assets.icon3} alt="user image" className="w-full rounded-3xl" />
                 </div>
                 <div className="flex-1">
-                    <p className="mb-10 max-w-2xl font-Ovo">I am experience Full Stack Developer with over a decade of professional expertise in the field thoughtout my career, I have had teh privilege of collaboration with prestigius organization, contributing to their success and growth. </p>
+                    <p className="mb-10 max-w-2xl font-Ovo">I am experience Software Engineer with over a decade of professional expertise in the field thoughtout my career, I have had teh privilege of collaboration with prestigius organization, contributing to their success and growth. </p>
 
                     <ul className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl">
                         {infoList.map(({icon, iconDark, title, description}, index)=>(
