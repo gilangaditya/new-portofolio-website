@@ -45,10 +45,10 @@ const Contact = () => {
 
             <form onSubmit={onSubmit} className=" max-w-2xl mx-auto">
                 <div className="grid grid-cols-auto mt-10 mb-8 gap-6">
-                    <input type="text" placeholder="Enter Your Name" required className="flex-1 p-3 outline-none border-[0.5px] border-gray-4 rounded-md bg-white dark:bg-darkHover/30 darl:border-white/90 " name="name"/>
-                    <input type="email" placeholder="Enter Your Email" required className="flex-1 p-3 outline-none border-[0.5px] border-gray-4 rounded-md bg-white dark:bg-darkHover/30 darl:border-white/90" name="email"/>
+                    <input type="text" placeholder="Enter Your Name" required className="flex-1 p-3 caret-pink-500 outline-none border-[0.5px] border-gray-4 rounded-md bg-white dark:bg-darkHover/30 darl:border-white/90 " name="name"/>
+                    <input type="email" placeholder="Enter Your Email" required className="flex-1 caret-pink-500 p-3 outline-none border-[0.5px] border-gray-4 rounded-md bg-white dark:bg-darkHover/30 darl:border-white/90" name="email"/>
                 </div>
-                <textarea className="w-full p-4 outline-none border-[0.5px] border-gray-400 rounded-md bg-white mb-6 dark:bg-darkHover/30 darl:border-white/90" rows={6} required placeholder="Enter Your Message" name="message">
+                <textarea className="w-full p-4 caret-pink-500 outline-none border-[0.5px] border-gray-400 rounded-md bg-white mb-6 dark:bg-darkHover/30 darl:border-white/90" rows={6} required placeholder="Enter Your Message" name="message">
                 </textarea>
 
                 <button type="submit" className="py-3 px-8 w-max flex items-center justify-between gap-2 bg-black/80 text-white rounded-full mx-auto hover:bg-black duration-500 dark:bg-tranparent dark:border-[0.5px] dark:hover:bg-darkHover">Submit Now <Image src={assets.right_arrow_white} alt="send" className="w-4" /></button>

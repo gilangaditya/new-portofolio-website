@@ -37,7 +37,7 @@ const Navbar = ({isDarkMode, setIsDarkMode}) => {
             <nav className={`w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50 ${isScrolled ? "bg-white bg-opacity-50 backdrop-blur-lg shadow-sm dark:bg-darkTheme dark:shadow-white/20" : ""}`}>
                 <a href="#top">
                     <Image 
-                        src={isDarkMode ? assets.logo : assets.logo} 
+                        src={isDarkMode ? assets.logo_dark : assets.logo} 
                         alt="" 
                         className="cursor-pointer mr-14 w-10" />
                 </a>
