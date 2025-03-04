@@ -134,6 +134,16 @@ export const workData = [
         description: 'UI/UX Design',
         bgImage: '/work-4.png',
     },
+    {
+        title: 'Photography site',
+        description: 'Web Design',
+        bgImage: '/work-3.png',
+    },
+    {
+        title: 'UI/UX designing',
+        description: 'UI/UX Design',
+        bgImage: '/work-4.png',
+    },
 ]
 
 export const serviceData = [
@@ -141,7 +151,54 @@ export const serviceData = [
     { icon: assets.mobile_icon, title: 'Mobile app', description: 'Mobile app development involves creating software for mobile devices...', link: '' },
     { icon: assets.ui_icon, title: 'UI/UX design', description: 'UI/UX design focuses on creating a seamless user experience...', link: '' },
     { icon: assets.graphics_icon, title: 'Graphics design', description: 'Creative design solutions to enhance visual communication...', link: '' },
-]
+];
+
+export const experienceData = [
+    { id: 1, 
+        dateFrom: 'Oct 2023', 
+        dateTo: 'Jan 2024', 
+        location: 'Karawang, East Java',
+        jobs: 'Freelance', 
+        title: 'PT. Rasonac Materials Indonesia', 
+        description: 'PT. Rasonac Materials Indonesai is a company enganged inthe automative sector'
+    },
+    { id: 2, 
+        dateFrom: 'Oct 2023', 
+        dateTo: 'Present',
+        location: 'Depok, East Java', 
+        jobs: 'Application Engineer', 
+        title: 'PT. Gaido Cito Ekakurindo', 
+        description: 'PT. Gaido Cito Ekakurindo has been operating in the Express Delivery & Logistics Services sector since 2003.'
+    }
+];
+
+export const jobDescription = [
+    { experienceId: 1, 
+        description: 'Managed fingerprint attendance systems using PostgreSQL for database optimization.'},
+    { experienceId: 1, 
+        description:  'Configured and maintained virtual machines using Hyper-V on Windows Server.'},
+    { experienceId: 1, 
+        description:  'Provided networking solutions to enhance system performance.'},
+    { experienceId: 1, 
+        description: 'Delivered reliable IT services to support daily business operations.'
+    },
+
+    { experienceId: 2, 
+        description: 'Managed and maintained company databases to ensure data accuracy and availability.'},
+    { experienceId: 2, 
+        description:  'Engineered and implemented application solutions to support operational efficiency.'},
+    { experienceId: 2, 
+        description:  'Provided technical support to troubleshoot and resolve IT issues.'},
+    { experienceId: 2, 
+        description: 'Developed and executed comprehensive test plans and cases to ensure product quality.'
+    },
+    { experienceId: 2, 
+        description: 'Identified, documented, and resolved bugs through close collaboration with developers.'
+    },
+    { experienceId: 2, 
+        description: 'Conducted both manual and automated testing using tools such as Selenium, Appium, and Cypress.'
+    }
+];
 
 export const infoList = [
     { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'HTML, CSS, JavaScript React Js, Next Js, Java, PHP, Python' },
