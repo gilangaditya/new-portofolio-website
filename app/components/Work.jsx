@@ -1,8 +1,22 @@
 import { assets, workData } from "@/assets/assets";
 import React from "react";
 import Image from "next/image";
+import { useState } from "react";
+
 
 const Work = ({isDarkMode}) => {
+
+    const initialProjects = 4; // Awalnya tampilkan 6 proyek
+    const [visibleProjects, setVisibleProjects] = useState(initialProjects);
+
+    const handleShowMore = () => {
+        setVisibleProjects(workData.length); // Tampilkan semua proyek
+    };
+
+    const handleShowLess = () => {
+        setVisibleProjects(initialProjects); // Kembali ke jumlah awal
+    };
+
 
     return (
 
@@ -12,11 +26,11 @@ const Work = ({isDarkMode}) => {
 
             <p className="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo">
             Welcome to my web development portfolio! Explore a collection of projects showcasing
-            my expertise in front-end development.
+            my expertise in Software Engineer.
             </p>
 
-        <div className="grid grid-cols-auto gap-5 my-10 dark:text-black">
-            {workData.map((project, index) => (
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 my-10 dark:text-black">
+        {workData.slice(0, visibleProjects).map((project, index) => (
                 <div key={index}
                 className="aspect-square bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group"
                 style={{ backgroundImage: `url(${project.bgImage})` }}>
@@ -32,11 +46,15 @@ const Work = ({isDarkMode}) => {
                 </div>
             ))}
         </div>
-            
-            <a href="" className="w-max flex items-center justify-center gap-2 text-gray-700 border-[0.5px] border-gray-700 rounded-full py-3 px-10 my-20 mx-auto hover:bg-lightHover hover:-translate-y-1 duration-500 dark:border-white dark:hover:bg-darkHover/50 dark:text-white">
-                Show More <Image src={ isDarkMode ? assets.right_arrow_white : assets.right_arrow_bold} alt="right arrow" className="w-4" />
-            </a>
-
+        {visibleProjects < workData.length ? (
+                <button onClick={handleShowMore} className="w-max flex items-center justify-center gap-2 text-gray-700 border-[0.5px] border-gray-700 rounded-full py-3 px-10 my-20 mx-auto hover:bg-lightHover hover:-translate-y-1 duration-500 dark:border-white dark:hover:bg-darkHover/50 dark:text-white">
+                    Show More <Image src={isDarkMode ? assets.right_arrow_white : assets.right_arrow_bold} alt="right arrow" className="w-4" />
+                </button>
+            ) : (
+                <button onClick={handleShowLess} className="w-max flex items-center justify-center gap-2 text-gray-700 border-[0.5px] border-gray-700 rounded-full py-3 px-10 my-20 mx-auto hover:bg-lightHover hover:-translate-y-1 duration-500 dark:border-white dark:hover:bg-darkHover/50 dark:text-white">
+                     <Image src={isDarkMode ? assets.right_arrow_white : assets.right_arrow_bold} alt="right arrow" className="w-4 rotate-180" />Show Less
+                </button>
+            )}
         </div>
     )
 }

@@ -9,7 +9,7 @@ const Services = ({isDarkMode}) => {
             <h2 className="text-center text-5xl font-Ovo">My Services</h2>
 
             <p className="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo">
-                I am a Fullstack developer from Depok, Indoneisa with 1 years of experience. in multiple companies I have a strong foundation in web development and have a passion for learning new technologies and building new projects. I am always looking for new opportunities to grow and expand my knowledge.
+                I am a Software Engineer from Depok, Indoneisa with 1 years of experience. in multiple companies I have a strong foundation in web development and have a passion for learning new technologies and building new projects. I am always looking for new opportunities to grow and expand my knowledge.
             </p>
 
             <div className="grid grid-cols-auto gap-6 my-10 ">
