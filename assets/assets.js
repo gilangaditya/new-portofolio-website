@@ -115,17 +115,17 @@ export const assets = {
 
 export const workData = [
     {
-        title: 'Frontend project',
-        description: 'Web Design',
+        title: 'Fullstack project',
+        description: 'Web Project',
         bgImage: '/work-1.png',
     },
     {
-        title: 'Geo based app',
+        title: 'Track Delivery based App',
         description: 'Mobile App',
         bgImage: '/work-2.png',
     },
     {
-        title: 'Photography site',
+        title: 'Company Profile Site',
         description: 'Web Design',
         bgImage: '/work-3.png',
     },
@@ -147,10 +147,26 @@ export const workData = [
 ]
 
 export const serviceData = [
-    { icon: assets.web_icon, title: 'Web design', description: 'Web development is the process of building, programming...', link: '' },
-    { icon: assets.mobile_icon, title: 'Mobile app', description: 'Mobile app development involves creating software for mobile devices...', link: '' },
-    { icon: assets.ui_icon, title: 'UI/UX design', description: 'UI/UX design focuses on creating a seamless user experience...', link: '' },
-    { icon: assets.graphics_icon, title: 'Graphics design', description: 'Creative design solutions to enhance visual communication...', link: '' },
+    { icon: assets.web_icon, 
+        title: 'Web Developer', 
+        description: 'Web development is the process of building, programming...', 
+        link: '' 
+    },
+    { icon: assets.mobile_icon, 
+        title: 'Mobile app', 
+        description: 'Mobile app development involves creating software for mobile devices...', 
+        link: '' 
+    },
+    { icon: assets.ui_icon, 
+        title: 'UI/UX design', 
+        description: 'UI/UX design focuses on creating a seamless user experience...', 
+        link: '' 
+    },
+    { icon: assets.graphics_icon, 
+        title: 'Graphics design', 
+        description: 'Creative design solutions to enhance visual communication...', 
+        link: '' 
+    },
 ];
 
 export const experienceData = [
