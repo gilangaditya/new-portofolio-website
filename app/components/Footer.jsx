@@ -20,7 +20,7 @@ const Footer = ({isDarkMode}) => {
                 <p>© 2025 Gilang Aditya Purnama Sidhi. All rights reserved.</p>
                 <ul className="flex items-center gap-10 justify-center mt-4 sm:mt-0">
                     <li><a target="_blank" href="https://github.com/gilangaditya">Github</a></li>
-                    <li><a target="_blank" href="www.linkedin.com/in/gilang-aditya-purnama-sidhi">LinkedIn</a></li>
+                    <li><a target="_blank" href="https://www.linkedin.com/in/gilang-aditya-purnama-sidhi">LinkedIn</a></li>
                     <li><a target="_blank" href="https://instagram.com/gilangadtyp_">Instagram</a></li>
                 </ul>
             </div>
