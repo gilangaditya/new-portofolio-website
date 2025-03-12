@@ -62,11 +62,12 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
                         <Image src={isDarkMode ? assets.close_white : assets.close_black} alt="Close Menu" className="w-5" />
                     </div>
 
-                    <li><Link className="font-Ovo" onClick={() => setIsMenuOpen(false)} href="#top" scroll={false}>Home</Link></li>
+                    <li><Link className="font-Ovo" onClick={() => setIsMenuOpen(false)} href="/" scroll={false}>Home</Link></li>
                     <li><Link className="font-Ovo" onClick={() => setIsMenuOpen(false)} href="#aboutme" scroll={false}>About Me</Link></li>
                     <li><Link className="font-Ovo" onClick={() => setIsMenuOpen(false)} href="#services" scroll={false}>Services</Link></li>
                     <li><Link className="font-Ovo" onClick={() => setIsMenuOpen(false)} href="#work" scroll={false}>My Work</Link></li>
                     <li><Link className="font-Ovo" onClick={() => setIsMenuOpen(false)} href="#contact" scroll={false}>Contact Me</Link></li>
+                    <li><Link className="font-Ovo" onClick={() => setIsMenuOpen(false)} href="/blog" scroll={false}>Blog</Link></li>
                 </ul>
             </nav>
         </>
