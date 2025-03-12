@@ -118,31 +118,37 @@ export const workData = [
         title: 'Fullstack project',
         description: 'Web Project',
         bgImage: '/work-1.png',
+        link: 'https://github.com/gilangaditya/Agen-bus'
     },
     {
         title: 'Track Delivery based App',
         description: 'Mobile App',
         bgImage: '/work-2.png',
+        link: ''
     },
     {
         title: 'Company Profile Site',
-        description: 'Web Design',
+        description: 'Wordpress',
         bgImage: '/work-3.png',
+        link: 'https://sevenmountainint.site/'
+    },
+    {
+        title: 'Top Up Diamond Web App',
+        description: 'Web Project',
+        bgImage: '/work-4.png',
+        link: 'https://github.com/gilangaditya/storegg-Top-up-diamond-game'
     },
     {
         title: 'UI/UX designing',
         description: 'UI/UX Design',
         bgImage: '/work-4.png',
+        link: ''
     },
     {
-        title: 'Photography site',
-        description: 'Web Design',
-        bgImage: '/work-3.png',
-    },
-    {
-        title: 'UI/UX designing',
-        description: 'UI/UX Design',
+        title: 'Warehouse Management',
+        description: 'Web Project',
         bgImage: '/work-4.png',
+        link: 'https://github.com/lesmanapaw/manajemen-app'
     },
 ]
 
