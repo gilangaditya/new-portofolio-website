@@ -52,7 +52,7 @@ import php from './php.svg';
 import mysql from './mysql.svg';
 import nextjs2_dark from './nextjs2_dark.svg';
 import nextjs2 from './nextjs2.svg';
-import laravel from './laravel.svg'
+import laravel from './laravel.svg';
 
 
 export const assets = {
@@ -110,70 +110,319 @@ export const assets = {
     vuejs,
     wordpress,
     reactjs,
-    laravel
+    laravel,
 };
 
 export const workData = [
     {
         title: 'Fullstack project',
-        description: 'Web Project',
-        bgImage: '/work-1.png',
+        description: 'Web Project Ticketing Bus using Laravel blade',
+        bgImage: '/agen-bus.png',
         link: 'https://github.com/gilangaditya/Agen-bus'
     },
     {
         title: 'Track Delivery based App',
-        description: 'Mobile App',
+        description: 'Mobile App using Vue.js, Python and Ionic Framework',
         bgImage: '/work-2.png',
-        link: ''
+        link: 'https://play.google.com/store/apps/details?id=id.co.gaido.mobile&hl=id'
     },
     {
         title: 'Company Profile Site',
-        description: 'Wordpress',
-        bgImage: '/work-3.png',
-        link: 'https://sevenmountainint.site/'
+        description: 'CMS Website using Next.js, Vue.js and Laravel 12',
+        bgImage: '/smint.png',
+        link: 'https://atrs.co.id/'
     },
     {
         title: 'Top Up Diamond Web App',
-        description: 'Web Project',
-        bgImage: '/work-4.png',
+        description: 'Web Project for Top Up Diamond Game using MERN Stack',
+        bgImage: '/storegg.png',
         link: 'https://github.com/gilangaditya/storegg-Top-up-diamond-game'
     },
     {
         title: 'UI/UX designing',
-        description: 'UI/UX Design',
+        description: 'UI/UX Design using Figma',
         bgImage: '/work-4.png',
         link: ''
     },
     {
         title: 'Warehouse Management',
-        description: 'Web Project',
-        bgImage: '/work-4.png',
-        link: 'https://github.com/lesmanapaw/manajemen-app'
+        description: 'Web Application for Warehouse Management System using Vue.js and Python',
+        bgImage: '/warehouse-management.png',
+        link: ''
+    },
+    {
+        title: 'ERP Logistics System',
+        description: 'Web Application for ERP Logistics System using Vue.js and Python',
+        bgImage: '/erp-system.png',
+        link: ''
     },
 ]
 
 export const serviceData = [
-    { icon: assets.web_icon, 
-        title: 'Web Developer', 
-        description: 'Web development is the process of building, programming...', 
-        link: '' 
+    {
+        icon: web_icon, // Icon Anda
+        title: "Web Developer",
+        description: "Web development is the process of building, programming...",
+        link: "", // Keep for backward compatibility
+        slug: "web-developer" // Tambahkan slug untuk routing
     },
-    { icon: assets.mobile_icon, 
-        title: 'Mobile app', 
-        description: 'Mobile app development involves creating software for mobile devices...', 
-        link: '' 
+    {
+        icon: mobile_icon,
+        title: "Mobile app",
+        description: "Mobile app development involves creating software for mobile devices...",
+        link: "",
+        slug: "mobile-app"
     },
-    { icon: assets.ui_icon, 
-        title: 'UI/UX design', 
-        description: 'UI/UX design focuses on creating a seamless user experience...', 
-        link: '' 
+    {
+        icon: ui_icon,
+        title: "UI/UX design",
+        description: "UI/UX design focuses on creating a seamless user experience...",
+        link: "",
+        slug: "ui-ux-design"
     },
-    { icon: assets.graphics_icon, 
-        title: 'Graphics design', 
-        description: 'Creative design solutions to enhance visual communication...', 
-        link: '' 
-    },
+    {
+        icon: graphics_icon,
+        title: "Graphics design",
+        description: "Creative design solutions to enhance visual communication...",
+        link: "",
+        slug: "graphics-design"
+    }
 ];
+
+export const serviceDetails = {
+    "web-developer": {
+        title: "Web Developer",
+        icon: "/web_icon.png",
+        shortDescription: "Web development is the process of building, programming...",
+        fullDescription: "As a skilled web developer, I specialize in creating robust, scalable, and user-friendly web applications that drive business growth and enhance user experience.",
+        keyServices: [
+            {
+                title: "Frontend Development",
+                description: "Building responsive and interactive user interfaces using modern frameworks like React, Next.js, and Vue.js with a focus on performance and accessibility."
+            },
+            {
+                title: "Backend Development",
+                description: "Developing robust server-side applications with Node.js, Express, and various databases including MongoDB, PostgreSQL, and MySQL."
+            },
+            {
+                title: "Full-Stack Solutions",
+                description: "End-to-end web application development from database design to user interface, ensuring seamless integration and optimal performance."
+            },
+            {
+                title: "API Development & Integration",
+                description: "Creating RESTful APIs and integrating third-party services to extend functionality and connect various systems."
+            }
+        ],
+        technologies: [
+            "React.js", "Next.js", "Node.js", "Laravel", "TypeScript", 
+            "Tailwind CSS", "MySQL", "PostgreSQL", "Git", "Docker"
+        ],
+        benefits: [
+            "Modern, responsive design that works on all devices",
+            "Fast loading times and optimized performance",
+            "SEO-friendly architecture for better visibility",
+            "Scalable codebase that grows with your business",
+            "Clean, maintainable code with best practices",
+            "Comprehensive testing and quality assurance"
+        ],
+        process: [
+            {
+                step: "Discovery & Planning",
+                description: "Understanding your requirements, goals, and target audience to create a strategic development plan."
+            },
+            {
+                step: "Design & Prototyping",
+                description: "Creating wireframes and prototypes to visualize the final product before development begins."
+            },
+            {
+                step: "Development",
+                description: "Building your application using modern technologies and best practices with regular updates."
+            },
+            {
+                step: "Testing & Deployment",
+                description: "Thorough testing across devices and browsers, followed by smooth deployment to production."
+            },
+            {
+                step: "Maintenance & Support",
+                description: "Ongoing support, updates, and optimization to ensure your application runs smoothly."
+            }
+        ]
+    },
+    "mobile-app": {
+        title: "Mobile App Development",
+        icon: "/mobile_icon.png",
+        shortDescription: "Mobile app development involves creating software for mobile devices...",
+        fullDescription: "I create high-performance mobile applications for iOS and Android platforms that deliver exceptional user experiences and drive engagement.",
+        keyServices: [
+            {
+                title: "Cross-Platform Development",
+                description: "Building apps that work seamlessly on both iOS and Android using React Native and Flutter, reducing development time and costs."
+            },
+            {
+                title: "Native App Development",
+                description: "Creating platform-specific applications that leverage the full potential of iOS and Android ecosystems."
+            },
+            {
+                title: "App UI/UX Design",
+                description: "Designing intuitive and engaging mobile interfaces that follow platform guidelines and best practices."
+            },
+            {
+                title: "App Maintenance & Updates",
+                description: "Regular updates, bug fixes, and feature enhancements to keep your app competitive and secure."
+            }
+        ],
+        technologies: [
+            "React Native", "Flutter", "Kotlin", "Firebase",
+            "Redux", "REST APIs", "GraphQL", "Push Notifications", "In-App Purchases"
+        ],
+        benefits: [
+            "Single codebase for multiple platforms",
+            "Native-like performance and user experience",
+            "Faster time to market",
+            "Cost-effective development",
+            "Easy maintenance and updates",
+            "Offline functionality support"
+        ],
+        process: [
+            {
+                step: "Consultation",
+                description: "Understanding your app idea, target users, and business objectives."
+            },
+            {
+                step: "Strategy & Planning",
+                description: "Defining features, platform choice, and creating a development roadmap."
+            },
+            {
+                step: "UI/UX Design",
+                description: "Creating user-friendly designs that align with platform standards."
+            },
+            {
+                step: "Development & Testing",
+                description: "Building the app with regular testing on actual devices."
+            },
+            {
+                step: "Launch & Support",
+                description: "App store submission and ongoing support after launch."
+            }
+        ]
+    },
+    "ui-ux-design": {
+        title: "UI/UX Design",
+        icon: "/uiux_icon.png",
+        shortDescription: "UI/UX design focuses on creating a seamless user experience...",
+        fullDescription: "I craft beautiful, intuitive, and user-centered designs that not only look great but also solve real problems and enhance user satisfaction.",
+        keyServices: [
+            {
+                title: "User Research & Analysis",
+                description: "Conducting user research, creating personas, and mapping user journeys to understand your audience deeply."
+            },
+            {
+                title: "UI Design",
+                description: "Creating visually appealing interfaces with attention to typography, color theory, and visual hierarchy."
+            },
+            {
+                title: "UX Design",
+                description: "Designing intuitive user flows, information architecture, and interaction patterns for optimal usability."
+            },
+            {
+                title: "Prototyping & Testing",
+                description: "Building interactive prototypes and conducting usability tests to validate design decisions."
+            }
+        ],
+        technologies: [
+            "Figma", "Adobe XD"
+        ],
+        benefits: [
+            "Increased user satisfaction and engagement",
+            "Reduced development costs through early validation",
+            "Better conversion rates and business outcomes",
+            "Consistent brand experience across platforms",
+            "Data-driven design decisions",
+            "Accessible designs for all users"
+        ],
+        process: [
+            {
+                step: "Research",
+                description: "Understanding users, competitors, and market trends through comprehensive research."
+            },
+            {
+                step: "Define",
+                description: "Creating user personas, journey maps, and defining design requirements."
+            },
+            {
+                step: "Ideate",
+                description: "Brainstorming solutions, sketching ideas, and exploring different approaches."
+            },
+            {
+                step: "Design",
+                description: "Creating high-fidelity mockups and interactive prototypes."
+            },
+            {
+                step: "Test & Iterate",
+                description: "Conducting usability tests and refining designs based on feedback."
+            }
+        ]
+    },
+    "graphics-design": {
+        title: "Graphics Design",
+        icon: "/graphics_icon.png",
+        shortDescription: "Creative design solutions to enhance visual communication...",
+        fullDescription: "I deliver creative and impactful graphic design solutions that help brands stand out, communicate effectively, and leave lasting impressions.",
+        keyServices: [
+            {
+                title: "Brand Identity Design",
+                description: "Creating comprehensive brand identities including logos, color palettes, typography, and brand guidelines."
+            },
+            {
+                title: "Marketing Materials",
+                description: "Designing brochures, flyers, posters, banners, and other promotional materials that capture attention."
+            },
+            {
+                title: "Social Media Graphics",
+                description: "Creating engaging social media posts, stories, covers, and ads optimized for various platforms."
+            },
+            {
+                title: "Illustration & Icon Design",
+                description: "Custom illustrations and icon sets that add personality and clarity to your products."
+            }
+        ],
+        technologies: [
+            "Adobe Photoshop", "Adobe Illustrator", "Adobe InDesign", "Figma",
+            "CorelDRAW", "Canva", "After Effects"
+        ],
+        benefits: [
+            "Professional and memorable brand presence",
+            "Consistent visual communication",
+            "High-quality, print-ready files",
+            "Quick turnaround times",
+            "Unlimited revisions until satisfied",
+            "Source files provided"
+        ],
+        process: [
+            {
+                step: "Brief & Discovery",
+                description: "Understanding your brand, goals, and design preferences."
+            },
+            {
+                step: "Concept Development",
+                description: "Creating initial concepts and mood boards for your review."
+            },
+            {
+                step: "Design Creation",
+                description: "Developing detailed designs based on approved concepts."
+            },
+            {
+                step: "Revision & Refinement",
+                description: "Making adjustments based on your feedback to perfect the design."
+            },
+            {
+                step: "Final Delivery",
+                description: "Providing all final files in various formats for different uses."
+            }
+        ]
+    }
+};
+
 
 export const experienceData = [
     { id: 1, 
@@ -185,7 +434,7 @@ export const experienceData = [
         description: 'PT. Rasonac Materials Indonesai is a company enganged inthe automative sector'
     },
     { id: 2, 
-        dateFrom: 'Oct 2023', 
+        dateFrom: 'Feb 2024', 
         dateTo: 'Present',
         location: 'Depok, East Java', 
         jobs: 'Application Engineer', 

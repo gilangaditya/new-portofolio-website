@@ -44,7 +44,7 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
                         <Image src={isDarkMode ? assets.sun_icon : assets.moon_icon} alt="Toggle Dark Mode" className="w-6" />
                     </button>
 
-                    <Link className="hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4 dark:border-white/50" href="#contact">
+                    <Link className="hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4 dark:border-white/50 hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black cursor-pointer dark:hover:bg-darkHover dark:hover:shadow-white" href="#contact">
                         Contact Me 
                         <Image src={isDarkMode ? assets.arrow_icon_dark : assets.arrow_icon} alt="Arrow Icon" className="w-3" />
                     </Link>
