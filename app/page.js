@@ -15,24 +15,31 @@ export default function Home() {
   const [isDarkMode, setIsDarkMode] = useState(false);
 
   useEffect(() => {
-    // Cek apakah tema di localStorage adalah "dark" atau preferensi media query adalah dark
-    if (localStorage.theme === "dark" || (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
-      setIsDarkMode(true);
-    } else {
-      setIsDarkMode(false);
-    }
-  }, []);  // Hanya eksekusi sekali saat pertama kali render
+        // Logika Inisialisasi:
+        const storedTheme = localStorage.getItem("theme");
+        const systemPrefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+        
+        // Atur state berdasarkan: (1) storedTheme 'dark' ATAU (2) tidak ada storedTheme DAN sistemnya dark
+        if (storedTheme === "dark" || (!storedTheme && systemPrefersDark)) {
+            setIsDarkMode(true);
+        } else {
+            // Ini akan mencakup storedTheme === "light" atau tidak ada storedTheme dan sistemnya light
+            setIsDarkMode(false);
+        }
+    }, []); 
 
-  useEffect(() => {
-    // Set dark mode ke body saat isDarkMode berubah
-    if (isDarkMode) {
-      document.documentElement.classList.add("dark");
-      localStorage.theme = "dark";
-    } else {
-      document.documentElement.classList.remove("dark");
-      localStorage.theme = "";
-    }
-  }, [isDarkMode]);
+    useEffect(() => {
+        // Logika Perubahan (Toggle):
+        if (isDarkMode) {
+            document.documentElement.classList.add("dark");
+            // ✅ PERBAIKAN: Menyimpan secara eksplisit
+            localStorage.setItem("theme", "dark");
+        } else {
+            document.documentElement.classList.remove("dark");
+            // ✅ PERBAIKAN: Menyimpan secara eksplisit
+            localStorage.setItem("theme", "light");
+        }
+    }, [isDarkMode]);
 
   return (
     <>

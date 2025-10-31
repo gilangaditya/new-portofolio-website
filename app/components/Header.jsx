@@ -12,9 +12,9 @@ const Header = ()=> {
                 <h1 className="text-3xl sm:text-6xl lg:text-[66px] font-Ovo">Software Engineer based in Depok</h1>
                 <p className="max-w-2xl mx-auto font-Ovo">I am an experienced Software Engineer with over a decade of professional expertise. Throughout my career, I have collaborated with prestigious organizations, contributing to their success and growth. I am passionate about technology and continuously seek to learn new skills to stay updated with industry trends. In my free time, I enjoy working on creative projects and experimenting with innovative ideas. 😄 </p>
                 <div className="flex flex-col sm:flex-row items-center gap-4 mt-4">
-                    <a href="#contact" className="px-10 py-3 border border-white rounded-full border-gray-500 flex items-center gap-2 text-white bg-black dark:bg-transparent">Contact Me <Image src={assets.right_arrow_white} alt="" className="w-4" /></a>
+                    <a href="#contact" className="px-10 py-3 border border-white rounded-full border-gray-500 flex items-center gap-2 text-white bg-black dark:bg-transparent hover:-translate-y-1 duration-500 hover:shadow-black cursor-pointer dark:hover:bg-darkHover dark:hover:shadow-white">Contact Me <Image src={assets.right_arrow_white} alt="" className="w-4" /></a>
 
-                    <a href="" className="px-10 py-3 border rounded-full border-gray-500 flex items-center gap-2 bg-white dark:text-black">My Resume <Image src={assets.download_icon} alt="" className="w-4" /></a>
+                    <a href="" className="px-10 py-3 border rounded-full border-gray-500 flex items-center gap-2 bg-white dark:text-black hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black cursor-pointer dark:hover:bg-darkHover dark:hover:shadow-white dark:hover:text-white">My Resume <Image src={assets.download_icon} alt="" className="w-4" /></a>
                 </div>
         </div>
     )
