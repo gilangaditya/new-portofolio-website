@@ -202,7 +202,7 @@ export const serviceDetails = {
             },
             {
                 title: "Backend Development",
-                description: "Developing robust server-side applications with Node.js, Express, and various databases including MongoDB, PostgreSQL, and MySQL."
+                description: "Developing robust server-side applications with Node.js, Laravel, Python and various databases including MongoDB, PostgreSQL, and MySQL."
             },
             {
                 title: "Full-Stack Solutions",
@@ -215,7 +215,7 @@ export const serviceDetails = {
         ],
         technologies: [
             "React.js", "Next.js", "Node.js", "Laravel", "TypeScript", 
-            "Tailwind CSS", "MySQL", "PostgreSQL", "Git", "Docker"
+            "Tailwind CSS", "MySQL", "PostgreSQL", "Git", "Docker", "Python", "Flask"
         ],
         benefits: [
             "Modern, responsive design that works on all devices",
