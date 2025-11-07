@@ -2,13 +2,11 @@
 import { assets } from "@/assets/assets";
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
-import HCaptcha from '@hcaptcha/react-hcaptcha';
 
 const Contact = () => {
   const [result, setResult] = useState("");
   const [showPopup, setShowPopup] = useState(false);
   const [popupType, setPopupType] = useState("success");
-  const [hcaptchaToken, setHcaptchaToken] = useState("");
 
   const onSubmit = async (event) => {
     event.preventDefault();
@@ -16,7 +14,6 @@ const Contact = () => {
 
     const formData = new FormData(event.target);
     formData.append("access_key", "b75909d4-270f-4f9e-9708-68e1629b39e6");
-    formData.append("h-captcha-response", hcaptchaToken);
 
     const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
@@ -75,15 +72,6 @@ const Contact = () => {
           placeholder="Enter Your Message"
           name="message"
         ></textarea>
-
-        {/* hCaptcha element */}
-        <HCaptcha
-        sitekey={process.env.NEXT_PUBLIC_HCAPTCHA_SITE_KEY}
-        onVerify={(token) => setHcaptchaToken(token)}
-        className="mb-6"
-        />
-
-
         <button
           type="submit"
           className="py-3 px-8 w-max flex items-center justify-between gap-2 bg-black/80 text-white rounded-full mx-auto hover:bg-black duration-500 dark:bg-transparent dark:border-[0.5px] dark:hover:bg-darkHover"
