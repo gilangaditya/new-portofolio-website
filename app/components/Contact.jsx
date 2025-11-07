@@ -78,8 +78,9 @@ const Contact = () => {
 
         {/* hCaptcha element */}
         <HCaptcha
-          sitekey={process.env.NEXT_PUBLIC_HCAPTCHA_SITE_KEY}
-          onVerify={(token) => setHcaptchaToken(token)}
+        sitekey={process.env.NEXT_PUBLIC_HCAPTCHA_SITE_KEY}
+        onVerify={(token) => setHcaptchaToken(token)}
+        className="mb-6"
         />
 
 
