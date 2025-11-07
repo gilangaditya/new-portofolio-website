@@ -9,10 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-<<<<<<< HEAD
     "@hcaptcha/react-hcaptcha": "^1.14.0",
-=======
->>>>>>> 250738183746d8bde3bbeee5658796546cc41ed1
     "@vercel/analytics": "^1.5.0",
     "axios": "^1.8.1",
     "next": "15.1.6",
