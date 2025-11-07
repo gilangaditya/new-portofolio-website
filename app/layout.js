@@ -1,5 +1,8 @@
 import { Outfit, Ovo } from "next/font/google";
+<<<<<<< HEAD
 import Script from "next/script";
+=======
+>>>>>>> 250738183746d8bde3bbeee5658796546cc41ed1
 import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
@@ -24,6 +27,7 @@ export default function RootLayout({ children }) {
       >
         {children}
         <Analytics />
+<<<<<<< HEAD
         {/* ✅ hCaptcha di-load di client */}
         <Script
           src="https://hcaptcha.com/1/api.js"
@@ -31,6 +35,8 @@ export default function RootLayout({ children }) {
           async
           defer
         />
+=======
+>>>>>>> 250738183746d8bde3bbeee5658796546cc41ed1
       </body>
     </html>
   );
