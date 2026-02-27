@@ -127,22 +127,16 @@ export const workData = [
         link: 'https://play.google.com/store/apps/details?id=id.co.gaido.mobile&hl=id'
     },
     {
+        title: 'Forcast stock App',
+        description: 'Prophet stock Forecast App using R language, Shiny. Data from Yahoo Finance',
+        bgImage: '/prophet.png',
+        link: ''
+    },
+    {
         title: 'Company Profile Site',
         description: 'CMS Website using Next.js, Vue.js and Laravel 12',
         bgImage: '/smint.png',
         link: 'https://atrs.co.id/'
-    },
-    {
-        title: 'Top Up Diamond Web App',
-        description: 'Web Project for Top Up Diamond Game using MERN Stack',
-        bgImage: '/storegg.png',
-        link: 'https://github.com/gilangaditya/storegg-Top-up-diamond-game'
-    },
-    {
-        title: 'UI/UX designing',
-        description: 'UI/UX Design using Figma',
-        bgImage: '/work-4.png',
-        link: ''
     },
     {
         title: 'Warehouse Management',
@@ -156,6 +150,18 @@ export const workData = [
         bgImage: '/erp-system.png',
         link: ''
     },
+      {
+        title: 'Top Up Diamond Web App',
+        description: 'Web Project for Top Up Diamond Game using MERN Stack',
+        bgImage: '/storegg.png',
+        link: 'https://github.com/gilangaditya/storegg-Top-up-diamond-game'
+    },
+    {
+        title: 'UI/UX designing',
+        description: 'UI/UX Design using Figma',
+        bgImage: '/work-4.png',
+        link: ''
+    }
 ]
 
 export const serviceData = [
