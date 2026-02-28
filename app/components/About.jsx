@@ -11,8 +11,8 @@ const About = ({isDarkMode})=> {
         visible: {
             opacity: 1,
             transition: {
-                staggerChildren: 0.2,
-                delayChildren: 0.1,
+                staggerChildren: 0.08,
+                delayChildren: 0.05,
             },
         },
     };
@@ -22,7 +22,7 @@ const About = ({isDarkMode})=> {
         visible: {
             opacity: 1,
             y: 0,
-            transition: { duration: 0.8, ease: "easeInOut" },
+            transition: { duration: 0.6, ease: "easeInOut" },
         },
     };
 
@@ -32,7 +32,7 @@ const About = ({isDarkMode})=> {
             className="w-full px-[12%] py-10 scoll-mt-20"
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true, amount: 0.3 }}
+            viewport={{ once: true, amount: 0.2 }}
             variants={containerVariants}
         >
             <motion.h4 variants={itemVariants} className="text-center mb-2 text-lg font-Ovo">Introduction</motion.h4>

@@ -12,8 +12,8 @@ const Services = ({isDarkMode}) => {
         visible: {
             opacity: 1,
             transition: {
-                staggerChildren: 0.15,
-                delayChildren: 0.2,
+                staggerChildren: 0.08,
+                delayChildren: 0.1,
             },
         },
     };
@@ -23,7 +23,7 @@ const Services = ({isDarkMode}) => {
         visible: {
             opacity: 1,
             y: 0,
-            transition: { duration: 0.8, ease: "easeInOut" },
+            transition: { duration: 0.6, ease: "easeInOut" },
         },
     };
 

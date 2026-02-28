@@ -11,8 +11,8 @@ const Header = ()=> {
         visible: {
             opacity: 1,
             transition: {
-                staggerChildren: 0.2,
-                delayChildren: 0.3,
+                staggerChildren: 0.08,
+                delayChildren: 0.15,
             },
         },
     };
@@ -22,7 +22,7 @@ const Header = ()=> {
         visible: {
             opacity: 1,
             y: 0,
-            transition: { duration: 0.8, ease: "easeInOut" },
+            transition: { duration: 0.6, ease: "easeInOut" },
         },
     };
 
@@ -33,7 +33,7 @@ const Header = ()=> {
             scale: 1,
             transition: { duration: 0.8, ease: "easeInOut" },
         },
-        hover: { scale: 1.05, transition: { type: "spring", stiffness: 300, damping: 20 } },
+        hover: { scale: 1.05, transition: { type: "spring", stiffness: 250, damping: 25 } },
     };
 
     return (

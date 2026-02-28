@@ -17,7 +17,7 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
 
     const menuVariants = {
         closed: { x: "100%" },
-        open: { x: 0, transition: { type: "spring", stiffness: 300, damping: 30 } },
+        open: { x: 0, transition: { type: "spring", stiffness: 250, damping: 35 } },
     };
 
     const linkVariants = {
