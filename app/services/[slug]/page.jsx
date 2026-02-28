@@ -15,7 +15,8 @@ export function generateStaticParams() {
 }
 
 export default async function ServiceDetail({ params }) {
-    const service = serviceDetails[params.slug];
+    const { slug } = await params;
+    const service = serviceDetails[slug];
     
     if (!service) {
         return (
@@ -30,5 +31,5 @@ export default async function ServiceDetail({ params }) {
         );
     }
     
-    return <ServiceDetailClient service={service} slug={params.slug} />;
+    return <ServiceDetailClient service={service} slug={slug} />;
 }
